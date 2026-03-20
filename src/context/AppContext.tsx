@@ -51,8 +51,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const persistUser = useCallback((u: UserProfile | null) => {
     setUser(u);
-    if (u) localStorage.setItem("gigshield_user", JSON.stringify(u));
-    else localStorage.removeItem("gigshield_user");
+    if (u) localStorage.setItem("coverkaro_user", JSON.stringify(u));
+    else localStorage.removeItem("coverkaro_user");
   }, []);
 
   const updateUser = useCallback((partial: Partial<UserProfile>) => {
