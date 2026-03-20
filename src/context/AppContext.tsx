@@ -66,7 +66,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const logout = useCallback(() => {
     setUser(null);
     setIsAdmin(false);
-    localStorage.removeItem("gigshield_user");
+    localStorage.removeItem("coverkaro_user");
   }, []);
 
   return (
