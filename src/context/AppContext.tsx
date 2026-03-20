@@ -58,7 +58,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const updateUser = useCallback((partial: Partial<UserProfile>) => {
     setUser(prev => {
       const updated = { ...(prev || defaultUser), ...partial };
-      localStorage.setItem("gigshield_user", JSON.stringify(updated));
+      localStorage.setItem("coverkaro_user", JSON.stringify(updated));
       return updated;
     });
   }, []);
