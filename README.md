@@ -21,7 +21,6 @@ Our system uses multi-layer AI validation instead of relying solely on GPS:
   - Verifies if the user is actually accepting/completing orders
   - No orders + high-risk zone = suspicious
 
----
 
 ### 2. Data Points Used Beyond GPS
 
@@ -40,7 +39,6 @@ To detect fraud rings, the system analyzes:
 - Time-based anomalies:
   - Claims triggered at identical timestamps across users
 
----
 
 ### 3. UX Balance: Fairness for Honest Workers
 
@@ -67,7 +65,7 @@ We ensure genuine users are NOT penalized:
   - Users see why a claim is flagged
   - Improves trust and transparency
 
----
+
 
 ### 4. Coordinated Fraud Detection (Advanced)
 
@@ -81,7 +79,7 @@ We ensure genuine users are NOT penalized:
   - Graph-based anomaly detection
   - Risk scoring (0–100)
 
----
+
 
 ### 5. Final Security Layer
 
@@ -94,7 +92,7 @@ Each claim passes through:
 
 Only then → **Auto Payout / Review**
 
----
+
 
 ### 🔒 Outcome
 
