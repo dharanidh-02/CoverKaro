@@ -44,7 +44,7 @@ export const useApp = () => useContext(AppContext);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<UserProfile | null>(() => {
-    const stored = localStorage.getItem("gigshield_user");
+    const stored = localStorage.getItem("coverkaro_user");
     return stored ? JSON.parse(stored) : null;
   });
   const [isAdmin, setIsAdmin] = useState(false);
