@@ -44,21 +44,21 @@ export const useApp = () => useContext(AppContext);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<UserProfile | null>(() => {
-    const stored = localStorage.getItem("gigshield_user");
+    const stored = localStorage.getItem("coverkaro_user");
     return stored ? JSON.parse(stored) : null;
   });
   const [isAdmin, setIsAdmin] = useState(false);
 
   const persistUser = useCallback((u: UserProfile | null) => {
     setUser(u);
-    if (u) localStorage.setItem("gigshield_user", JSON.stringify(u));
-    else localStorage.removeItem("gigshield_user");
+    if (u) localStorage.setItem("coverkaro_user", JSON.stringify(u));
+    else localStorage.removeItem("coverkaro_user");
   }, []);
 
   const updateUser = useCallback((partial: Partial<UserProfile>) => {
     setUser(prev => {
       const updated = { ...(prev || defaultUser), ...partial };
-      localStorage.setItem("gigshield_user", JSON.stringify(updated));
+      localStorage.setItem("coverkaro_user", JSON.stringify(updated));
       return updated;
     });
   }, []);
@@ -66,7 +66,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const logout = useCallback(() => {
     setUser(null);
     setIsAdmin(false);
-    localStorage.removeItem("gigshield_user");
+    localStorage.removeItem("coverkaro_user");
   }, []);
 
   return (

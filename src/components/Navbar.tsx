@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
             <Shield className="w-4 h-4 text-primary-foreground" />
           </div>
-          <span className="text-foreground">GigShield</span>
+          <span className="text-foreground">CoverKaro</span>
         </Link>
 
         {/* Desktop nav */}
